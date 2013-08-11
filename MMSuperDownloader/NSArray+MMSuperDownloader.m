@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Lanvige Jiang. All rights reserved.
 //
 
-#import "NSArray+FileManager.h"
+#import "NSArray+MMSuperDownloader.h"
 
-@implementation NSArray (FileManager)
+@implementation NSArray (MMSuperDownloader)
 
 - (BOOL)writeToFile:(NSString *)filename
 {

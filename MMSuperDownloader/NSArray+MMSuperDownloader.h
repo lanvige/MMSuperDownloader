@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (FileManager)
+@interface NSArray (MMSuperDownloader)
 
-- (BOOL)writeToFile:(NSString *) filename;
+- (BOOL)writeToFile:(NSString *)filename;
 + (NSArray *)readFromFile:(NSString *) filename;
 
 @end

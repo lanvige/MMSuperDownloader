@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSURL (Filename)
+@interface NSURL (MMSuperDownloader)
 
 - (NSString *)getFilename;
 

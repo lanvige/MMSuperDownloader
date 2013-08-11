@@ -12,9 +12,8 @@
 		38014C8317B7735E00F4715A /* AFHTTPClient+BatchDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C7317B7735E00F4715A /* AFHTTPClient+BatchDownload.m */; };
 		38014C8417B7735E00F4715A /* MMDownloadClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C7617B7735E00F4715A /* MMDownloadClient.m */; };
 		38014C8617B7735E00F4715A /* MMDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C7A17B7735E00F4715A /* MMDownloadRequestOperation.m */; };
-		38014C8717B7735E00F4715A /* MCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C7D17B7735E00F4715A /* MCFileManager.m */; };
-		38014C8817B7735E00F4715A /* NSArray+FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C7F17B7735E00F4715A /* NSArray+FileManager.m */; };
-		38014C8917B7735E00F4715A /* NSURL+Filename.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C8117B7735E00F4715A /* NSURL+Filename.m */; };
+		38014C8817B7735E00F4715A /* NSArray+MMSuperDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C7F17B7735E00F4715A /* NSArray+MMSuperDownloader.m */; };
+		38014C8917B7735E00F4715A /* NSURL+MMSuperDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 38014C8117B7735E00F4715A /* NSURL+MMSuperDownloader.m */; };
 		38A8A50717B659BF006378B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A8A50617B659BF006378B9 /* UIKit.framework */; };
 		38A8A50917B659BF006378B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A8A50817B659BF006378B9 /* Foundation.framework */; };
 		38A8A50B17B659BF006378B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A8A50A17B659BF006378B9 /* CoreGraphics.framework */; };
@@ -40,12 +39,10 @@
 		38014C7917B7735E00F4715A /* MMDownloadRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDownloadRequestOperation.h; sourceTree = "<group>"; };
 		38014C7A17B7735E00F4715A /* MMDownloadRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDownloadRequestOperation.m; sourceTree = "<group>"; };
 		38014C7B17B7735E00F4715A /* MMDownloadStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDownloadStatus.h; sourceTree = "<group>"; };
-		38014C7C17B7735E00F4715A /* MCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFileManager.h; sourceTree = "<group>"; };
-		38014C7D17B7735E00F4715A /* MCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFileManager.m; sourceTree = "<group>"; };
-		38014C7E17B7735E00F4715A /* NSArray+FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FileManager.h"; sourceTree = "<group>"; };
-		38014C7F17B7735E00F4715A /* NSArray+FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FileManager.m"; sourceTree = "<group>"; };
-		38014C8017B7735E00F4715A /* NSURL+Filename.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Filename.h"; sourceTree = "<group>"; };
-		38014C8117B7735E00F4715A /* NSURL+Filename.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Filename.m"; sourceTree = "<group>"; };
+		38014C7E17B7735E00F4715A /* NSArray+MMSuperDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMSuperDownloader.h"; sourceTree = "<group>"; };
+		38014C7F17B7735E00F4715A /* NSArray+MMSuperDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMSuperDownloader.m"; sourceTree = "<group>"; };
+		38014C8017B7735E00F4715A /* NSURL+MMSuperDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MMSuperDownloader.h"; sourceTree = "<group>"; };
+		38014C8117B7735E00F4715A /* NSURL+MMSuperDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MMSuperDownloader.m"; sourceTree = "<group>"; };
 		38A8A50317B659BF006378B9 /* MMSuperDownloader Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMSuperDownloader Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A8A50617B659BF006378B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38A8A50817B659BF006378B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,24 +82,30 @@
 		38014C6F17B7735D00F4715A /* MMSuperDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				38014C8D17B78ABA00F4715A /* Categories */,
 				38014C7017B7735E00F4715A /* AFDownloadRequestOperation.h */,
 				38014C7117B7735E00F4715A /* AFDownloadRequestOperation.m */,
-				38014C7217B7735E00F4715A /* AFHTTPClient+BatchDownload.h */,
-				38014C7317B7735E00F4715A /* AFHTTPClient+BatchDownload.m */,
-				38014C7C17B7735E00F4715A /* MCFileManager.h */,
-				38014C7D17B7735E00F4715A /* MCFileManager.m */,
 				38014C7517B7735E00F4715A /* MMDownloadClient.h */,
 				38014C7617B7735E00F4715A /* MMDownloadClient.m */,
 				38014C7917B7735E00F4715A /* MMDownloadRequestOperation.h */,
 				38014C7A17B7735E00F4715A /* MMDownloadRequestOperation.m */,
 				38014C7B17B7735E00F4715A /* MMDownloadStatus.h */,
 				38014C7417B7735E00F4715A /* MMSuperDownloader.h */,
-				38014C7E17B7735E00F4715A /* NSArray+FileManager.h */,
-				38014C7F17B7735E00F4715A /* NSArray+FileManager.m */,
-				38014C8017B7735E00F4715A /* NSURL+Filename.h */,
-				38014C8117B7735E00F4715A /* NSURL+Filename.m */,
 			);
 			path = MMSuperDownloader;
+			sourceTree = "<group>";
+		};
+		38014C8D17B78ABA00F4715A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				38014C7217B7735E00F4715A /* AFHTTPClient+BatchDownload.h */,
+				38014C7317B7735E00F4715A /* AFHTTPClient+BatchDownload.m */,
+				38014C7E17B7735E00F4715A /* NSArray+MMSuperDownloader.h */,
+				38014C7F17B7735E00F4715A /* NSArray+MMSuperDownloader.m */,
+				38014C8017B7735E00F4715A /* NSURL+MMSuperDownloader.h */,
+				38014C8117B7735E00F4715A /* NSURL+MMSuperDownloader.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		38A8A4FA17B659BF006378B9 = {
@@ -271,11 +274,10 @@
 				38014C8217B7735E00F4715A /* AFDownloadRequestOperation.m in Sources */,
 				38A8A51317B659BF006378B9 /* main.m in Sources */,
 				38A8A51717B659BF006378B9 /* MMAppDelegate.m in Sources */,
-				38014C8917B7735E00F4715A /* NSURL+Filename.m in Sources */,
-				38014C8817B7735E00F4715A /* NSArray+FileManager.m in Sources */,
+				38014C8917B7735E00F4715A /* NSURL+MMSuperDownloader.m in Sources */,
+				38014C8817B7735E00F4715A /* NSArray+MMSuperDownloader.m in Sources */,
 				38014C8317B7735E00F4715A /* AFHTTPClient+BatchDownload.m in Sources */,
 				38A8A52017B659BF006378B9 /* MMViewController.m in Sources */,
-				38014C8717B7735E00F4715A /* MCFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
