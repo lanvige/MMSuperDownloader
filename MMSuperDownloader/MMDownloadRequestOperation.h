@@ -20,7 +20,10 @@ typedef void (^MCDownloadProgressBlock)();
 typedef void (^MCDownloadCompleteBlock)();
 @property(readwrite, copy) MCDownloadCompleteBlock downloadCompleteBlock;
 
-- (id) initWithRequest:(NSURL *) urlRequest downloadKey:(NSString *) downloadKey pathPrefix:(NSString *) pathPrefix;
-- (void) pause;
+- (id)initWithRequest:(NSURL *)urlRequest
+           downloadKey:(NSString *)downloadKey
+            pathPrefix:(NSString *)pathPrefix;
+- (void)pause;
+- (void)cancel;
 
 @end

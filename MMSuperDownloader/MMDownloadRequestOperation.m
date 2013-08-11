@@ -54,4 +54,9 @@
     [super pause];
 }
 
+- (void)cancel
+{
+    [super cancel];
+}
+
 @end

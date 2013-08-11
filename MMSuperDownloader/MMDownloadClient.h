@@ -11,6 +11,6 @@
 
 @interface MMDownloadClient : AFHTTPClient
 
-+ (id) sharedInstance;
++ (id)sharedInstance;
 
 @end

@@ -17,15 +17,15 @@
 {
     __block dispatch_group_t dispatchGroup = dispatch_group_create();
     NSBlockOperation *batchedOperation = [NSBlockOperation blockOperationWithBlock:^{
-                                              dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^{
-                                                                        if (wholeCompletionBlock) {
-                                                                            wholeCompletionBlock(operations);
-                                                                        }
-                                                                    });
+            dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^{
+                if (wholeCompletionBlock) {
+                    wholeCompletionBlock(operations);
+                }
+            });
 #if !OS_OBJECT_USE_OBJC
-                                              dispatch_release(dispatchGroup);
+          dispatch_release(dispatchGroup);
 #endif
-                                          }];
+      }];
 
     for (MMDownloadRequestOperation *operation in operations) {
         // http://stackoverflow.com/questions/10892361/generic-typeof-for-weak-self-references
@@ -37,16 +37,16 @@
             __strong __typeof(& *weakOperation) strongOperation = weakOperation;
             dispatch_queue_t queue = strongOperation.progressiveDownloadCallbackQueue ? : dispatch_get_main_queue();
             dispatch_group_async(dispatchGroup, queue, ^{
-                                     long long downloadedContentLength = 0;
+                long long downloadedContentLength = 0;
 
-                                     for (MMDownloadRequestOperation *op in operations) {
-                                         downloadedContentLength += op.totalBytesReadForFile;
-                                     }
+                for (MMDownloadRequestOperation *op in operations) {
+                 downloadedContentLength += op.totalBytesReadForFile;
+                }
 
-                                     if (wholeProgressBlock) {
-                                         wholeProgressBlock(downloadedContentLength);
-                                     }
-                                 });
+                if (wholeProgressBlock) {
+                 wholeProgressBlock(downloadedContentLength);
+                }
+            });
         };
 
         operation.downloadCompleteBlock = ^{
